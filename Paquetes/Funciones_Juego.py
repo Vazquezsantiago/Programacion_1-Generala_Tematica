@@ -16,8 +16,9 @@ def guardar_dados(lista_dados):
         posicion=int(input("elija un dado a guardar(1-5 por su posicion)"))
         borrado = lista_dados[(posicion-1)]
         dados_mano.append(borrado)
-        lista_dados.remove(borrado)    
+        lista_dados.remove(borrado)
+        print(lista_dados)    
         print(dados_mano)
-        print(lista_dados)   
+           
 dados=tirar_dados()
 guardar_dados(dados)
