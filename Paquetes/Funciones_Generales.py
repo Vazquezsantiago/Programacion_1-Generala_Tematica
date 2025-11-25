@@ -1,3 +1,5 @@
+import Paquetes.Funciones_Juego as Fj
+
 def menu():
     print("\n===== Generala Mágica =====\n")
 
@@ -11,7 +13,7 @@ def menu():
         opcion = input("---Seleccione una opción: ")
     
         if opcion == "1":
-            asd=2
+            inicio()
 
         elif opcion == "2":
             a=3
@@ -37,6 +39,8 @@ def creditos():
                   -Verónica Natalia Carnonari
         Carrera: Técnicatura Universitaria en Programación
         Contacto: -lucavelozo@live.com
-                  -
+                  -vazquezsantiago47606@gmail.com
         ====================================
         ''')
+    
+    

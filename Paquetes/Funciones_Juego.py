@@ -9,16 +9,17 @@ def tirar_dados():
     return(lista_dados)
 
 
+
 def guardar_dados(lista_dados):
     dados_mano=[]
-    while len(dados_mano) <2:
-        
-        posicion=int(input("elija un dado a guardar(1-5 por su posicion)"))
+    while len(dados_mano) <3 or desea=="n" :
+        desea= str(input("desea guardar dados?(s/n): "))
+        if desea == "n":
+            print(dados_mano)
+            break
+        posicion=int(input("elija un dado a guardar(1-5 por su posicion"))
         borrado = lista_dados[(posicion-1)]
         dados_mano.append(borrado)
         lista_dados.remove(borrado)
         print(lista_dados)    
         print(dados_mano)
-           
-dados=tirar_dados()
-guardar_dados(dados)
